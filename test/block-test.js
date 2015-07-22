@@ -48,6 +48,7 @@ describe('block', function () {
   it('should be able to move down', function () {
     var b = new Block(1, 0);
     b.down(board);
+
     assert.equal(b.y, 1);
   });
 
@@ -95,7 +96,6 @@ describe('block', function () {
     b1.down(board);
     b1.down(board);
     assert.equal(18, b1.y);
-
   });
 
   it('should stack on another', function () {
