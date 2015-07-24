@@ -1,6 +1,6 @@
 const chai = require('chai');
 const assert = chai.assert;
-const Block = require('../lib/block/index');
+const Block = require('../lib/block').Block;
 
 describe('block', function () {
   it('have an x', function () {

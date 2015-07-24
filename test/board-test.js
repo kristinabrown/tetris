@@ -1,9 +1,9 @@
 const chai = require('chai');
 const assert = chai.assert;
 const board = require('../lib/board/index');
-const clearRows = require('../lib/board/index');
-const checkBoard = require('../lib/board/index');
-const gameStatus = require('../lib/board/index');
+const clearRows = require('../lib/board/index').clearRows;
+const checkBoard = require('../lib/board/index').checkBoard;
+const gameStatus = require('../lib/board/index').gameStatus;
 
 
 describe('board', function () {
