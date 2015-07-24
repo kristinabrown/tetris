@@ -1,9 +1,9 @@
 const chai = require('chai');
 const assert = chai.assert;
-const Block = require('../lib/block/index');
+const Block = require('../lib/block').Block;
 
 
-describe('board', function () {
+describe('game', function () {
 var board = [ [0,0,0,0,0,0,0,0,0,0],
               [0,0,0,0,0,0,0,0,0,0],
               [0,0,0,0,0,0,0,0,0,0],
