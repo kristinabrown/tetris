@@ -11,12 +11,34 @@ describe('shapes', function () {
     assert(Array.isArray(i[0]));
   });
 
+  var pieces = [];
+
   it('it should be able to move down', function(){
     var testShape = new Shape();
+    testShape.blocks.forEach(function(block){pieces.push(block)});
 
-    var result = testShape.down(board);
-    assert.equal(result[3].y, 1)
+    testShape.down(board);
+
+    assert.equal(testShape.blocks[0].y, 1)
   });
+
+  it('it should should be able to move right', function() {
+    var testShape = new Shape();
+    testShape.blocks.forEach(function(block){pieces.push(block)});
+    testShape.right(board, pieces);
+
+    assert.equal(testShape.blocks[0].x, 5)
+  });
+
+  it('it should should be able to move right', function() {
+    var testShape = new Shape();
+    console.log(testShape.blocks[0].x)
+    testShape.blocks.forEach(function(block){pieces.push(block)});
+    testShape.left(board, pieces);
+
+    assert.equal(testShape.blocks[0].x, 4)
+  });
+
 
 
 

@@ -75,7 +75,7 @@ describe('block', function () {
   it('should be able to move to the right', function () {
     var b = new Block(1, 0);
     pieces.push(b);
-    b.right(board);
+    b.right(board, pieces);
     assert.equal(b.x, 2);
     pieces.unshift();
   });
@@ -83,7 +83,7 @@ describe('block', function () {
   it('should not be able to move to the right', function () {
     var b = new Block(9, 0);
     pieces.push(b);
-    b.right(board);
+    b.right(board, pieces);
     assert.equal(b.x, 9);
     pieces.unshift();
   });
@@ -113,16 +113,16 @@ describe('block', function () {
   });
 
   it('should stack on another', function () {
-    var b1 = new Block(9, 16);
+    var b1 = new Block(5, 16);
     pieces.push(b1);
-    var b = new Block(9, 19);
+    var b = new Block(5, 19);
     pieces.push(b);
-    b.down(board, pieces);
     b1.down(board, pieces);
     b1.down(board, pieces);
     b1.down(board, pieces);
     b1.down(board, pieces);
-    assert.equal(b1.y, 18);
+    b1.down(board, pieces);
+    assert.equal(18, b1.y);
     pieces.unshift();
   });
 
