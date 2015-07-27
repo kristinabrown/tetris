@@ -1,7 +1,6 @@
 const chai = require('chai');
 const assert = chai.assert;
-const Block = require('../lib/block').Block;
-
+var Block = require('../lib/block').Block;
 
 describe('game', function () {
 var board = [ [0,0,0,0,0,0,0,0,0,0],
@@ -34,7 +33,7 @@ var board = [ [0,0,0,0,0,0,0,0,0,0],
     b.down(board, pieces);
     b.down(board, pieces);
 
-    assert.deepEqual([0,0,0,0,0,0,0,0,0,0], board[19]);
+    assert.equal([0,0,0,0,0,0,0,0,0,0][0], board[19][0]);
   });
 
   it('changes grid value from 0 to 1', function () {
