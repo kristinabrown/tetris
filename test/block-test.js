@@ -3,28 +3,28 @@ const assert = chai.assert;
 const Block = require('../lib/block').Block;
 
 describe('block', function () {
-  it('have an x', function () {
+  it('has an x', function () {
     var b = new Block(1, 0);
     pieces.push(b);
     assert.equal(b.x, 1);
     pieces.unshift();
   });
 
-  it('have a y', function () {
+  it('has a y', function () {
     var b = new Block(1, 0);
     pieces.push(b);
     assert.equal(b.y, 0);
     pieces.unshift();
   });
 
-  it('have a height', function () {
+  it('has a height', function () {
     var b = new Block(1, 0);
     pieces.push(b);
     assert.equal(b.height, 30);
     pieces.unshift();
   });
 
-  it('have a width', function () {
+  it('has a width', function () {
     var b = new Block(1, 0);
     pieces.push(b);
     assert.equal(b.width, 30);
@@ -64,7 +64,7 @@ describe('block', function () {
     pieces.unshift();
   });
 
-  it('should not be able to move down', function () {
+  it('should not be able to move down when at the bottom', function () {
     var b = new Block(5, 19);
     pieces.push(b);
     b.down(board, pieces);

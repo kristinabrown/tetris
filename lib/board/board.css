@@ -15,5 +15,6 @@
 
 .body{
   background-image: url('../../groovy.jpg');
-  max-width: 100%;
+  background-size: cover;
+  background-repeat: none;
 }
