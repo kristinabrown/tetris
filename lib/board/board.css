@@ -1,3 +1,13 @@
 .game-canvas {
   border: 2px solid black;
 }
+
+#game {
+  margin-left: 450px
+}
+
+.title {
+  /*font-style: oblique;*/
+  font-size: 2em;
+  margin-left: 510px;
+}
