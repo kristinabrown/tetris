@@ -8,7 +8,7 @@ const board = require('../lib/board').board;
 
 describe('shapes', function () {
   it('i is an array of blocks', function () {
-    assert(Array.isArray(i));
+    assert(Array.isArray(i.blocks));
   });
 
   var pieces = [];

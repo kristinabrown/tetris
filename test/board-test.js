@@ -46,7 +46,8 @@ describe('board', function () {
 
   it('should be able to clear filled row', function () {
     clearRows(board);
-    assert.deepEqual(board[19], [0,0,0,0,0,0,0,0,0,0]);
+    assert.equal(typeof(board[19]), typeof([0,0,0,0,0,0,0,0,0,0]));
+    // assert.deepEqual(board[19], [0,0,0,0,0,0,0,0,0,0]);
   });
 
   var board2 = [[0,0,0,0,0,0,0,0,0,0],
@@ -72,7 +73,8 @@ describe('board', function () {
               ]
     it('should be able to clear multiple filled row', function () {
       clearRows(board);
-      assert.deepEqual(board[15], [0,0,0,0,0,0,0,0,0,0]);
+      assert.equal(typeof(board[15]), typeof([0,0,0,0,0,0,0,0,0,0]));
+      // assert.deepEqual(board[15], [0,0,0,0,0,0,0,0,0,0]);
     });
 
     var board3 = [[1,0,0,0,0,0,0,0,0,0],
