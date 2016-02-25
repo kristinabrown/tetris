@@ -1,4 +1,4 @@
-# Game Time Starter Kit
+# Disco Tetris
 
 To install the dependencies:
 
@@ -9,12 +9,12 @@ npm install
 To fire up a development server:
 
 ```
-npm run server
+npm start
 ```
 
 
-To build the static files:
+To run the test suite:
 
 ```js
-npm run build
+npm test
 ```
