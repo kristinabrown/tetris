@@ -1,5 +1,5 @@
 # Disco Tetris
-### The toughest game of testris you'll ever play...
+#### The toughest game of tetris you'll ever play...
 
 To install the dependencies:
 
